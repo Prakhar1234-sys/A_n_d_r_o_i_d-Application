@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/paper"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- ==================================================== -->
+            <!-- HEADER BLOCK                                         -->
+            <!-- ==================================================== -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="12dp">
+
+                    <!-- Logomark Icon Box Wrap -->
+                    <View
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@color/pine"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:letterSpacing="0.14"
+                        android:text="@string/signal"
+                        android:textColor="@color/pine"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        tools:ignore="TextContrastCheck" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="-0.02"
+                    android:text="@string/mind_health_predicator"
+                    android:textColor="#C62828"
+                    android:textColorHint="@color/material_dynamic_neutral60"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/student_wellness_analytics_by_alpha_team"
+                    android:textSize="12sp"
+                    android:textColor="@color/ink_soft"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- ==================================================== -->
+            <!-- SECTION 01: PROFILE COMPONENT                       -->
+            <!-- ==================================================== -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/line"
+                app:strokeWidth="1dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/surface">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_01_profile"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/pine"
+                        android:layout_marginBottom="16dp"/>
+
+                    <EditText
+                        android:id="@+id/etAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:hint="@string/age_10_100"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:minHeight="48dp"
+                        android:padding="12dp"
+                        android:textColor="@color/ink"
+                        android:textColorHint="@color/material_dynamic_neutral60"
+                        android:textSize="16sp"
+                        tools:ignore="TextContrastCheck" />
+
+                    <Spinner
+                        android:id="@+id/spinnerGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="@color/line" />
+
+                    <EditText
+                        android:id="@+id/etCountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:hint="@string/country"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        android:padding="12dp"
+                        android:textColor="@color/ink"
+                        android:textColorHint="@color/material_dynamic_neutral60"
+                        android:textSize="16sp"
+                        tools:ignore="TextContrastCheck" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ==================================================== -->
+            <!-- SECTION 02: ACADEMIC & DIGITAL HABITS COMPONENT      -->
+            <!-- ==================================================== -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/line"
+                app:strokeWidth="1dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/surface">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_02_academic_amp_digital_habits"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/pine"
+                        android:layout_marginBottom="16dp"/>
+
+                    <Spinner
+                        android:id="@+id/spinnerAcademic"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="@color/line"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+
+                    <Spinner
+                        android:id="@+id/spinnerPlatform"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="@color/line" />
+
+                    <EditText
+                        android:id="@+id/etScreenTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:hint="@string/avg_daily_screen_time_hrs"
+                        android:importantForAutofill="no"
+                        android:inputType="numberDecimal"
+                        android:minHeight="48dp"
+                        android:padding="12dp"
+                        android:textColorHint="@color/material_dynamic_neutral60"
+                        android:textSize="16sp"
+                        tools:ignore="TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/etUnlocks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:hint="@string/daily_phone_unlocks"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:minHeight="48dp"
+                        android:padding="12dp"
+                        android:textColorHint="@color/material_dynamic_neutral60"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ==================================================== -->
+            <!-- SECTION 03: LIFESTYLE & STRESS COMPONENT             -->
+            <!-- ==================================================== -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/line"
+                app:strokeWidth="1dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/surface">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="03 Lifestyle &amp; Stress"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/pine"
+                        android:layout_marginBottom="16dp"/>
+
+                    <EditText
+                        android:id="@+id/etStudyHours"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:hint="Study hours / day"
+                        android:textColorHint="@color/material_dynamic_neutral60"
+                        android:inputType="numberDecimal"
+                        android:padding="12dp"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Perceived stress level"
+                        android:textSize="13sp"
+                        android:textColor="@color/ink_soft"
+                        android:layout_marginBottom="8dp"/>
+
+                    <RadioGroup
+                        android:id="@+id/rgStressLevel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/stressLow"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/btn_default"
+                            android:button="@android:color/transparent"
+                            android:gravity="center"
+                            android:text="Low"
+                            android:textColor="@color/material_dynamic_neutral40"
+                            android:textSize="12sp" />
+
+                        <RadioButton
+                            android:id="@+id/stressMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/btn_default"
+                            android:button="@android:color/transparent"
+                            android:gravity="center"
+                            android:text="Med"
+                            android:textColor="@color/material_dynamic_neutral_variant40"
+                            android:textSize="12sp"
+                            android:visibility="visible"
+                            tools:visibility="visible" />
+
+                        <RadioButton
+                            android:id="@+id/stressHigh"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/btn_default"
+                            android:button="@android:color/transparent"
+                            android:gravity="center"
+                            android:text="High"
+                            android:textColor="@color/material_dynamic_neutral40"
+                            android:textSize="12sp" />
+
+                        <RadioButton
+                            android:id="@+id/stressVeryHigh"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/btn_default"
+                            android:button="@android:color/transparent"
+                            android:gravity="center"
+                            android:text="V.High"
+                            android:textColor="@color/material_dynamic_neutral30"
+                            android:textSize="12sp" />
+                    </RadioGroup>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ==================================================== -->
+            <!-- ACTION BUTTONS ROW                                   -->
+            <!-- ==================================================== -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_marginBottom="24dp">
+
+                <Button
+                    android:id="@+id/btnClear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clear form"
+                    android:textColor="@color/ink_soft"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_marginEnd="12dp"/>
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Read my signal"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="@color/pine"/>
+            </LinearLayout>
+
+            <!-- ==================================================== -->
+            <!-- OUTPUT RESULT & FOOTER CARD                           -->
+            <!-- ==================================================== -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="26dp"
+                app:cardElevation="4dp"
+                app:strokeWidth="0dp"
+                android:layout_marginBottom="32dp"
+                app:cardBackgroundColor="@color/pine_deep">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/txtFinalResult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your score will appear here"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Built for informational purposes only — this is not a clinical assessment. If you're struggling, please talk to someone you trust."
+                        android:textSize="11sp"
+                        android:textColor="#B3EAF3EE"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+</ScrollView>

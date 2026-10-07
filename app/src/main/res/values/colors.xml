@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Warm Clay & Ink Color Palette Tokens -->
+    <color name="ink">#241C1A</color>
+    <color name="ink_soft">#6E6059</color>
+    <color name="paper">#F7F1E8</color>
+    <color name="paper_deep">#EBB979</color>
+    <color name="surface">#FFFDFA</color>
+    <color name="line">#E4D6C4</color>
+
+    <!-- Primary Accents -->
+    <color name="pine">#C1502E</color> <!-- Terracotta / Clay Primary -->
+    <color name="pine_deep">#8C3A20</color>
+    <color name="pine_tint">#F6E3D6</color>
+
+    <!-- Context Status Accents -->
+    <color name="amber">#D99A3D</color>
+    <color name="coral">#C0433D</color>
+    <color name="sage">#3F8F6B</color>
+</resources>

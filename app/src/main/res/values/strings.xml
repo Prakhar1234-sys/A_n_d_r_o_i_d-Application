@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Mind Trace</string>
+    <string name="signal">SIGNAL</string>
+    <string name="student_wellness_analytics_by_alpha_team">Student Wellness Analytics - by Alpha Team</string>
+    <string name="mind_health_predicator">Mind Health Predicator</string>
+    <string name="_01_profile">01 Profile</string>
+    <string name="age_10_100">Age (10 - 100)</string>
+    <string name="country">Country</string>
+    <string name="_02_academic_amp_digital_habits"><![CDATA[02 Academic & Digital Habits]]></string>
+    <string name="avg_daily_screen_time_hrs">Avg. daily screen time (hrs)</string>
+    <string name="daily_phone_unlocks">Daily phone unlocks</string>
+</resources>
